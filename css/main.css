@@ -91,7 +91,7 @@
 
 /*CURSOR ANIMATION */
 .cursor{
-    position: relative;
+    position: fixed;
     z-index: 12;
     width: 50px;
     height: 50px;
