@@ -1,0 +1,131 @@
+/* ------------------------------------------------------------------- 
+ * ## Buttons ##
+ * ------------------------------------------------------------------- */
+
+.homeBtn{
+  border-width: 2px;
+  border-radius: 30px;
+  background-color: #ffffff10;
+
+}
+
+.homeBtn:hover{
+  
+  border-color: -webkit-linear-gradient(120deg, #f35626, #feab3a);
+	background-image: -webkit-linear-gradient(120deg, #f35626, #feab3a);
+	-webkit-animation: hue 10s infinite linear;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## home scroll
+ * ------------------------------------------------------------------- */
+ .home-content__scroll {
+   z-index: 13;
+  position: fixed;
+  right: 8rem;
+  bottom: 5.4rem;
+  -webkit-transform: rotate(-90deg) translate3d(100%, 50%, 0);
+  -ms-transform: rotate(-90deg) translate3d(100%, 50%, 0);
+  transform: rotate(-90deg) translate3d(100%, 50%, 0);
+  -webkit-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
+
+.home-content__scroll .scroll-link {
+  z-index: 13;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.35rem;
+  text-align: left;
+  color: #FFFFFF;
+  position: relative;
+  padding-right: 180px;
+}
+
+.bdash {
+	background-image: -webkit-linear-gradient(120deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}	
+
+.progress-bar-color{
+  background-image: -webkit-linear-gradient(120deg, #f35626, #feab3a);
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+.home-content__scroll .scroll-link:hover,
+.home-content__scroll .scroll-link:focus {
+  z-index: 13;
+	background-image: -webkit-linear-gradient(120deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+  
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+.home-content__scroll::after {
+  z-index: 13;
+  content: "";
+  display: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 150px;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+
+/*CURSOR ANIMATION */
+.cursor{
+    position: relative;
+    z-index: 12;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c6c6c6;
+    border-radius: 40%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+  }
+  
+  .cursor2{
+    position: absolute;
+    z-index: 12;
+    width: 8px;
+    height: 8px;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+  }
+  
+  .content:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 12;
+    background-color: #c6c6c6;
+    opacity: .5;
+  }
+  
+  .content:hover ~ .cursor2{
+      z-index: 12;
+    opacity: 0;
+  }
